@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ... */
+
+@layer base {
+
+:root  {
+  --background: 0 50% 0%;
+  --foreground: 0 5% 90%;
+  --card: 0 50% 0%;
+  --card-foreground: 0 5% 90%;
+  --popover: 0 50% 5%;
+  --popover-foreground: 0 5% 90%;
+  --primary: 0 98.2% 42.5%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 30% 10%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: -38 30% 15%;
+  --muted-foreground: 0 5% 60%;
+  --accent: -38 30% 15%;
+  --accent-foreground: 0 5% 90%;
+  --destructive: 0 100% 30%;
+  --destructive-foreground: 0 5% 90%;
+  --border: 0 30% 18%;
+  --input: 0 30% 18%;
+  --ring: 0 98.2% 42.5%;
+  --radius: 0.5rem;
+}
+ .light  {
+  --background: 0 100% 95%;
+  --foreground: 0 5% 0%;
+  --card: 0 50% 90%;
+  --card-foreground: 0 5% 10%;
+  --popover: 0 100% 95%;
+  --popover-foreground: 0 100% 0%;
+  --primary: 0 98.2% 42.5%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 30% 70%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: -38 30% 85%;
+  --muted-foreground: 0 5% 35%;
+  --accent: -38 30% 80%;
+  --accent-foreground: 0 5% 10%;
+  --destructive: 0 100% 30%;
+  --destructive-foreground: 0 5% 90%;
+  --border: 0 30% 50%;
+  --input: 0 30% 18%;
+  --ring: 0 98.2% 42.5%;
+  --radius: 0.5rem;
+}
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+@font-face {
+  font-family: 'WLRfont';
+  src: url('./assets/fonts/Slash%20Signature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MUSICfont';
+  src: url('./assets/fonts/LongTall.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
